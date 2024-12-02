@@ -288,7 +288,12 @@ const knightTravails = function (knightStartPosition, target) {
     while (knightPosition != "A") {
       makeNextMove();
     }
-    console.log(knightHistory);
+    console.log(
+      `You made it in ${knightHistory.length} moves! Here your path:`
+    );
+    for (let i = 0; i < knightHistory.length; i++) {
+      console.log(`[${knightHistory[i]}]`);
+    }
   }
 };
 
